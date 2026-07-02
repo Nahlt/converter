@@ -139,8 +139,8 @@
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
   /* ---- QR a schermo intero ---- */
-  .fs{position:fixed;inset:0;background:#fff;z-index:100;display:flex;align-items:center;justify-content:center;cursor:pointer}
-  .fs-inner{display:flex;flex-direction:column;align-items:center;gap:22px;padding:24px;text-align:center}
+  .fs{position:fixed;inset:0;background:#fff;z-index:100;display:flex;align-items:flex-start;justify-content:center;cursor:pointer}
+  .fs-inner{display:flex;flex-direction:column;align-items:center;gap:22px;padding:24px;text-align:center;margin-top:12vh}
   .fs canvas{display:block;image-rendering:pixelated}
   .fs-summary{font-family:'IBM Plex Mono',monospace;color:#111}
   .fs-summary .big{font-size:19px;font-weight:600;letter-spacing:.01em}
@@ -155,7 +155,7 @@
   <main class="device" role="main">
     <header>
       <div>
-        <div class="eyebrow">Contatore · <b>5/3</b></div>
+        <div class="eyebrow">Contatore · fattore <b>5/3</b></div>
         <div class="wordmark">Tempo<span>&times;</span>Convertitore</div>
       </div>
       <div class="ratio-badge">v = (5t − k)/3</div>
